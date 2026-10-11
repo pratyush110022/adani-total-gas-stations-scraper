@@ -1,0 +1,13 @@
+LocNo,Station Name,Address,NearArea,City,State,PinCode,MobileNo,Latitude,Longitude,Google Maps
+SYN-ATG-001,Synthetic Adani Gas Station 01,"Synthetic Test Road 01, Test District, Karnataka",Synthetic Near Area 01,Bengaluru,Karnataka,000000,0000000000,12.9716,77.5946,https://example.com/maps/adani-01
+SYN-ATG-002,Synthetic Adani Gas Station 02,"Synthetic Test Road 02, Test District, Maharashtra",Synthetic Near Area 02,Mumbai,Maharashtra,000000,0000000000,19.077,72.87870000000001,https://example.com/maps/adani-02
+SYN-ATG-003,Synthetic Adani Gas Station 03,"Synthetic Test Road 03, Test District, Odisha",Synthetic Near Area 03,Bhubaneswar,Odisha,000000,0000000000,20.298099999999998,85.8265,https://example.com/maps/adani-03
+SYN-ATG-004,Synthetic Adani Gas Station 04,"Synthetic Test Road 04, Test District, Telangana",Synthetic Near Area 04,Hyderabad,Telangana,000000,0000000000,17.385,78.4867,https://example.com/maps/adani-04
+SYN-ATG-005,Synthetic Adani Gas Station 05,"Synthetic Test Road 05, Test District, Karnataka",Synthetic Near Area 05,Bengaluru,Karnataka,000000,0000000000,12.9726,77.5956,https://example.com/maps/adani-05
+SYN-ATG-006,Synthetic Adani Gas Station 06,"Synthetic Test Road 06, Test District, Maharashtra",Synthetic Near Area 06,Mumbai,Maharashtra,000000,0000000000,19.078,72.8797,https://example.com/maps/adani-06
+SYN-ATG-007,Synthetic Adani Gas Station 07,"Synthetic Test Road 07, Test District, Odisha",Synthetic Near Area 07,Bhubaneswar,Odisha,000000,0000000000,20.2961,85.8245,https://example.com/maps/adani-07
+SYN-ATG-008,Synthetic Adani Gas Station 08,"Synthetic Test Road 08, Test District, Telangana",Synthetic Near Area 08,Hyderabad,Telangana,000000,0000000000,17.386000000000003,78.4877,https://example.com/maps/adani-08
+SYN-ATG-009,Synthetic Adani Gas Station 09,"Synthetic Test Road 09, Test District, Karnataka",Synthetic Near Area 09,Bengaluru,Karnataka,000000,0000000000,12.973600000000001,77.5966,https://example.com/maps/adani-09
+SYN-ATG-010,Synthetic Adani Gas Station 10,"Synthetic Test Road 10, Test District, Maharashtra",Synthetic Near Area 10,Mumbai,Maharashtra,000000,0000000000,19.076,72.8777,https://example.com/maps/adani-10
+SYN-ATG-011,Synthetic Adani Gas Station 11,"Synthetic Test Road 11, Test District, Odisha",Synthetic Near Area 11,Bhubaneswar,Odisha,000000,0000000000,20.2971,85.8255,https://example.com/maps/adani-11
+SYN-ATG-012,Synthetic Adani Gas Station 12,"Synthetic Test Road 12, Test District, Telangana",Synthetic Near Area 12,Hyderabad,Telangana,000000,0000000000,17.387,78.4887,https://example.com/maps/adani-12

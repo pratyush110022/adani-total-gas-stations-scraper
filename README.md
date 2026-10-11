@@ -1,30 +1,72 @@
 ﻿# Adani Total Gas Stations Scraper
 
-A Python project for collecting and organizing Adani Total Gas
-station information.
+Python project for collecting and organizing Adani Total Gas station information.
 
-## Project Files
+## Overview
 
-- `Adani_Total_Gas_Stations_scraper.py` — main Python script
-- `Adani_Total_Gas_Stations.xlsx` — sample dataset
+This repository contains the Python script used for the project.
+The actual collection methods, geographic coverage, and output depend
+on the implementation and source availability.
+
+## Features
+
+- Automated gas station data collection
+- Structured station data processing
+- Excel output dataset
+
+## Technology Stack
+
+- Python
+- Data collection and processing
+- Structured data handling
+- Excel integration, where supported by the script
+
+## Repository Structure
+
+```
+adani-total-gas-stations-scraper/
+|-- Adani_Total_Gas_Stations_scraper.py
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
+```
 
 ## Setup
 
-Create a virtual environment:
+Use Python 3.10 or a compatible version supported by the script.
 
-    python -m venv .venv
-    .venv\Scripts\Activate.ps1
+Create and activate a virtual environment:
 
-Install the Python packages required by the script.
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
 
-Review the script imports and install the corresponding dependencies.
+Install dependencies:
+
+```powershell
+pip install -r requirements.txt
+```
 
 ## Run
 
-    python Adani_Total_Gas_Stations_scraper.py
+```powershell
+python "Adani_Total_Gas_Stations_scraper.py"
+```
 
-## Notes
+Review the script configuration before running it. If authentication
+is required, use authorized credentials and keep secrets outside
+the source code.
 
-Data coverage, freshness, and completeness depend on the source
-and the implementation. Confirm applicable access terms and
-permission to redistribute data before publishing.
+## Data and Usage Notes
+
+- Data completeness depends on the source and collection process.
+- Check the source provider's terms and permissions.
+- Do not publish confidential data or credentials.
+- Treat collected data as a snapshot unless freshness is verified.
+
+## Author
+
+**Pratyush Das**
+
+GitHub: https://github.com/pratyush110022

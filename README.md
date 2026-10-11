@@ -1,72 +1,56 @@
-﻿# Adani Total Gas Stations Scraper
+# Adani Total Gas CNG Station Scraper
 
-Python project for collecting and organizing Adani Total Gas station information.
+Python automation that queries the Adani Gas area and CNG-station APIs, consolidates station records, deduplicates them by location number, and exports an Excel workbook.
 
-## Overview
+## How it works
 
-This repository contains the Python script used for the project.
-The actual collection methods, geographic coverage, and output depend
-on the implementation and source availability.
+1. Iterates through the city/municipality search values configured in the script.
+2. Sends a GET request to the area endpoint for each configured value.
+3. Sends a POST request for each returned area to retrieve station records.
+4. Combines the station responses, removes duplicates using LocNo, and derives standardized address and map-link fields.
+5. Sorts the final dataset and writes an Excel workbook.
 
-## Features
+## Output data
 
-- Automated gas station data collection
-- Structured station data processing
-- Excel output dataset
+The workbook columns are:
 
-## Technology Stack
+- LocNo — source location identifier
+- Station Name
+- Address — assembled from the source address fields
+- NearArea
+- City and State
+- PinCode and MobileNo
+- Latitude and Longitude
+- Google Maps — map query constructed from the coordinates
 
-- Python
-- Data collection and processing
-- Structured data handling
-- Excel integration, where supported by the script
+The script reports raw record count and unique station count in the terminal.
 
-## Repository Structure
+## Files
 
-```
-adani-total-gas-stations-scraper/
-|-- Adani_Total_Gas_Stations_scraper.py
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
-```
+- Adani_Total_Gas_Stations_scraper.py — scraper entry point
+- Adani_Total_Gas_Stations.xlsx — example output workbook
+- requirements.txt — base Python dependencies
 
 ## Setup
 
-Use Python 3.10 or a compatible version supported by the script.
+Python 3.10 or a compatible version is recommended. Create a virtual environment and install the project dependencies plus the Excel writer engine:
 
-Create and activate a virtual environment:
+    python -m venv .venv
+    .venv/Scripts/Activate.ps1
+    pip install -r requirements.txt openpyxl
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
+## Configuration and run
 
-Install dependencies:
+The source endpoints, request headers, and cities search list are declared near the top of Adani_Total_Gas_Stations_scraper.py. Update the list to adjust the search coverage.
 
-```powershell
-pip install -r requirements.txt
-```
+Run:
 
-## Run
+    python Adani_Total_Gas_Stations_scraper.py
 
-```powershell
-python "Adani_Total_Gas_Stations_scraper.py"
-```
+The workbook Adani_Total_Gas_Stations.xlsx is written to the current working directory.
 
-Review the script configuration before running it. If authentication
-is required, use authorized credentials and keep secrets outside
-the source code.
+## Notes
 
-## Data and Usage Notes
-
-- Data completeness depends on the source and collection process.
-- Check the source provider's terms and permissions.
-- Do not publish confidential data or credentials.
-- Treat collected data as a snapshot unless freshness is verified.
-
-## Author
-
-**Pratyush Das**
-
-GitHub: https://github.com/pratyush110022
+- Excel export requires openpyxl; the repository's requirements list may need to be supplemented as shown above.
+- Coverage is limited to the configured search values and the results returned by the source endpoints.
+- Source APIs and returned fields can change. Follow source terms and applicable data-use policies.

@@ -28,7 +28,7 @@ The script reports raw record count and unique station count in the terminal.
 ## Files
 
 - Adani_Total_Gas_Stations_scraper.py — scraper entry point
-- Adani_Total_Gas_Stations.xlsx — example output workbook
+- `Adani_Total_Gas_Stations.xlsx` — existing scraper output workbook
 - requirements.txt — base Python dependencies
 
 ## Setup
@@ -54,3 +54,7 @@ The workbook Adani_Total_Gas_Stations.xlsx is written to the current working dir
 - Excel export requires openpyxl; the repository's requirements list may need to be supplemented as shown above.
 - Coverage is limited to the configured search values and the results returned by the source endpoints.
 - Source APIs and returned fields can change. Follow source terms and applicable data-use policies.
+
+## Synthetic sample data
+
+[`sample_synthetic_12_records.csv`](sample_synthetic_12_records.csv) contains **12 synthetic test records** using the scraper's output schema. These records were generated for schema inspection and portfolio/demo purposes; they were not collected from the source website or API. Names and addresses are fictional, contact details and example.com links are placeholders, coordinates are illustrative, and ratings/prices are not real or current. Do not use them for real-world navigation or pricing decisions.
